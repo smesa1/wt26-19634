@@ -1,0 +1,90 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea,
+select {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font: inherit;
+}
+
+button {
+    padding: 10px;
+    margin: 5px 5px 0 0;
+    cursor: pointer;
+}
+
+#greska {
+    color: #b00020;
+    font-weight: bold;
+}
+
+#pregled {
+    padding: 20px;
+    border: 2px solid #aaa;
+    border-radius: 6px;
+    background-color: white;
+    overflow-wrap: anywhere;
+}
+
+#pregledTekst {
+    white-space: pre-wrap;
+}
+
+#pregled.informacija {
+    background-color: #eaf4ff;
+    border-color: #2463a0;
+}
+
+#pregled.informacija h3,
+#pregled.informacija #pregledKategorija {
+    color: #174c80;
+}
+
+#pregled.upozorenje {
+    background-color: #fff3cd;
+    border-color: #946200;
+}
+
+#pregled.upozorenje h3,
+#pregled.upozorenje #pregledKategorija {
+    color: #795000;
+}
+
+#pregledKategorija {
+    font-weight: bold;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+button:focus-visible {
+    outline: 3px solid #165bb5;
+    outline-offset: 2px;
+}

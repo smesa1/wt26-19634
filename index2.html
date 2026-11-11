@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregled obavijesti</title>
+    <link rel="stylesheet" href="style2.css">
+    <script src="script2.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Kreiranje obavijesti</h1>
+
+        <form id="forma" novalidate>
+            <label for="naslov">Naslov:</label>
+            <input type="text" id="naslov" required>
+
+            <label for="tekst">Tekst obavijesti:</label>
+            <textarea id="tekst" rows="5" required></textarea>
+
+            <label for="kategorija">Kategorija:</label>
+            <select id="kategorija">
+                <option value="informacija">Informacija</option>
+                <option value="upozorenje">Upozorenje</option>
+            </select>
+
+            <p id="greska" role="alert"></p>
+
+            <button type="submit">Prikaži pregled</button>
+            <button type="reset">Vrati na početno stanje</button>
+        </form>
+
+        <section aria-labelledby="naslovSekcije">
+            <h2 id="naslovSekcije">Pregled obavijesti</h2>
+
+            <article id="pregled" aria-live="polite">
+                <p id="pregledKategorija">Kategorija nije odabrana.</p>
+                <h3 id="pregledNaslov">Naslov obavijesti</h3>
+                <p id="pregledTekst">Ovdje će biti prikazan tekst obavijesti.</p>
+            </article>
+        </section>
+    </main>
+</body>
+</html>

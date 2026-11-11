@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Priprema putovanja</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Priprema putovanja</h1>
+        <p>Klikni na stavku ili njeno dugme da promijeniš stanje.</p>
+
+        <p id="sazetak" role="status">Završeno: 0 / 5</p>
+
+        <ul id="lista">
+            <li>
+                <span>Spakovati odjeću</span>
+                <button type="button" aria-pressed="false">
+                    Završeno
+                </button>
+            </li>
+            <li>
+                <span>Pripremiti dokumente</span>
+                <button type="button" aria-pressed="false">
+                    Završeno
+                </button>
+            </li>
+            <li>
+                <span>Napuniti telefon</span>
+                <button type="button" aria-pressed="false">
+                    Završeno
+                </button>
+            </li>
+            <li>
+                <span>Provjeriti prevoz</span>
+                <button type="button" aria-pressed="false">
+                    Završeno
+                </button>
+            </li>
+            <li>
+                <span>Spakovati higijenski pribor</span>
+                <button type="button" aria-pressed="false">
+                    Završeno
+                </button>
+            </li>
+        </ul>
+
+        <button type="button" id="reset">
+            Vrati sve na početno stanje
+        </button>
+    </main>
+</body>
+</html>

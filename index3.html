@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="bs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evidencija troškova</title>
+    <link rel="stylesheet" href="style3.css">
+    <script src="script3.js" defer></script>
+</head>
+<body>
+    <main>
+        <h1>Evidencija troškova</h1>
+
+        <form id="forma" novalidate>
+            <label for="naziv">Naziv troška:</label>
+            <input type="text" id="naziv" required>
+
+            <label for="iznos">Iznos u KM:</label>
+            <input type="text" id="iznos"
+                   inputmode="decimal" required>
+
+            <p id="greska" role="alert"></p>
+
+            <button type="submit">Dodaj trošak</button>
+        </form>
+
+        <p id="brojStavki" role="status">Broj stavki: 3</p>
+
+        <table>
+            <caption>Pregled troškova u KM</caption>
+
+            <thead>
+                <tr>
+                    <th scope="col">Naziv</th>
+                    <th scope="col">Iznos u KM</th>
+                </tr>
+            </thead>
+
+            <tbody id="stavke">
+                <tr>
+                    <td>Prevoz</td>
+                    <td>20.00</td>
+                </tr>
+                <tr>
+                    <td>Hrana</td>
+                    <td>15.50</td>
+                </tr>
+                <tr>
+                    <td>Ulaznica</td>
+                    <td>10.00</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr>
+                    <th scope="row">Ukupno</th>
+                    <td id="zbir">45.50</td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

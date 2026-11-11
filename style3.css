@@ -1,0 +1,88 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f5f7;
+    color: #222;
+    margin: 0;
+    padding: 20px;
+}
+
+main {
+    max-width: 650px;
+    margin: 0 auto;
+}
+
+form {
+    background-color: white;
+    border: 1px solid #aaa;
+    border-radius: 6px;
+    padding: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    font: inherit;
+}
+
+button {
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+#greska {
+    color: #b00020;
+    font-weight: bold;
+}
+
+#brojStavki {
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    table-layout: fixed;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 12px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+thead {
+    background-color: #dce8f5;
+}
+
+tfoot {
+    background-color: #e6efdf;
+    font-weight: bold;
+}
+
+th:last-child,
+td:last-child {
+    text-align: right;
+    width: 30%;
+}
+
+input:focus-visible,
+button:focus-visible {
+    outline: 3px solid #165bb5;
+    outline-offset: 2px;
+}
